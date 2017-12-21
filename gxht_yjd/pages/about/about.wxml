@@ -1,0 +1,48 @@
+<!--about.wxml-->
+<view class="contain">
+  <!-- <view class="aboutus">
+    <image src="../../images/aboutus.jpg"></image>
+  </view>  -->
+  <view class="company">
+    <view class="company-cn">
+      <text>公司简介</text>
+    </view>
+    <view class="company-en">
+      <text>COMPANY</text>
+      <text class="txt-orange">PROFILE</text>
+    </view>
+    <view class="company-content">
+      <text>
+        我们是一家互联网综合金融咨询服务类平台，依托庞大的征信数据、先进的数据挖掘技术，平台入驻百万家企业一对一为中小微企业提供一站式的贷款申请服务。宁波国信汇通金融科技有限公司立足于宁波以“用心创造，服务增值”的经营思路，为各地企业单位提供从网站建设到应有软件开发的电子商务应用。
+    </text>
+       <image src="../../images/compute.png"></image> 
+    </view>
+
+
+    <view class="company-cn">
+      <text>联系我们</text>
+    </view>
+    <view class="company-en">
+      <text class="contactTxt-orange">CONTACT</text>
+      <text style="padding-left:10rpx;">US</text>
+    </view>
+    <view class="contactus">
+      <!-- <view class="contactus-con phone">
+        <image src="../../images/phone.png" bindtouchstart="makePhoneCall"></image>
+        <text> 电话：13655880858</text>
+      </view> -->
+      <view class="contactus-con position">
+        <image src="../../images/position.png" bindtouchstart="openLocation"></image>
+        <text> 地址：宁波市鄞州区百隆巷1号盛世国际805</text>
+      </view>
+      <view class="map">
+        <map style="width: 100%; height: 300px;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}">
+      </map>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <text>宁波国信汇通  提供技术支持</text>
+  </view>
+
+</view>

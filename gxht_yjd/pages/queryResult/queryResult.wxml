@@ -1,0 +1,9 @@
+<!--pages/queryResult/queryResult.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="contain">
+  <view class='result'>查询结果</view>
+  <view class='uinn content-section'>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <button class="close" wx:if="{{loading}}" plain="true" type="default" bindtap="close">关闭</button>
+</view>

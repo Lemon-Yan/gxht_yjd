@@ -1,0 +1,235 @@
+/**index.wxss**/
+
+/*轮播控件*/
+
+.home-swiper {
+  width: 100%;
+  height: 440rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+/*图片大小自适应*/
+
+image {
+  width: 100%;
+  vertical-align: top;
+  display: block;
+}
+
+/*清除浮动样式*/
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+  clear: both;
+}
+
+.clearfix:after {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  content: " ";
+  visibility: hidden;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.mt30 {
+  margin-top: 30rpx;
+}
+
+/*九宫格begin*/
+
+.navlist {
+  background-color: white;
+  padding-top: 1rem;
+  margin-top: 20rpx;
+}
+
+.navlist navigator {
+  width: 25%;
+  float: left;
+  margin-bottom: 0.65rem;
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  color: #222;
+  display: block;
+}
+
+.navlist image {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 30rpx auto;
+}
+
+/*九宫格end*/
+
+/* 列表项-头部 */
+
+.homeList {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.head {
+  border-bottom: solid #f8f8f8 1px;
+  height: 65rpx;
+}
+
+.head image {
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin-left: 15rpx;
+  margin-top: 10rpx;
+}
+
+.head text {
+  font-size: 28rpx;
+  color: red;
+  line-height: 70rpx;
+  margin-left: 7px;
+}
+
+/* 列表项-列表*/
+
+.listItem {
+  height: 140rpx;
+  border-bottom: solid #f8f8f8 1px;
+}
+
+.itemImg {
+  overflow: hidden;
+  float: left;
+}
+
+.itemImg image {
+  width: 4rem;
+  height: 3rem;
+  margin: 15rpx 10rpx;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.itemTxt {
+  width: 60%;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.itemTxt .txt-title {
+  padding-top: 10rpx;
+  font-weight: bold;
+  color: #000;
+  font-size: 32rpx;
+  display: block;
+  margin-top: 10rpx;
+  float: left;
+}
+
+.itemTxt .txt-desc {
+  font-size: 26rpx;
+  color: #b0b0b0;
+  display: block;
+  margin-top: 20rpx;
+  float: left;
+}
+
+.shenqing {
+  border: solid green 1px;
+  border-radius: 10rpx;
+  float: left;
+  margin: 45rpx 10rpx 0;
+}
+
+.shenqing navigator {
+  font-size: 28rpx;
+  padding: 8rpx 25rpx;
+  color: green;
+}
+
+/* 滚动部分 */
+
+/* 定位 */
+
+.swiperview2 {
+  height: 80rpx;
+  background-color: white;
+  border-bottom: solid #f8f8f8 1px;
+}
+
+.swiperview2 image {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin: 18rpx 0 0 15rpx;
+}
+
+/* 滚动 */
+
+.gundong-section {
+  position: relative;
+  overflow: hidden;
+  height: 80rpx;
+  background-color: white;
+  border-bottom: solid #f8f8f8 1px;
+}
+
+.gundong-section image {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin: 18rpx 0 0 15rpx;
+}
+
+.gundong-section .swiper-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 80rpx;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiperitem {
+  height: 100%;
+  margin-left: 2rem;
+}
+
+.swiperview .wx-swiper-dots {
+  display: none;
+}
+
+.swiper-txt {
+  font-size: 30rpx;
+  color: #b0b0b0;
+  line-height: 88rpx;
+}

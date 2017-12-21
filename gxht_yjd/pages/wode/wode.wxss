@@ -1,0 +1,101 @@
+/* wode.wxss */
+
+/*头部*/
+
+.headerView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3cb371;
+  padding: 90rpx 0;
+}
+
+/*头像*/
+
+.headerView .picture {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+/*名字*/
+
+.headerView .name {
+  color: white;
+  margin-top: 10px;
+}
+
+/*表格*/
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background: white;
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+  position: relative;
+}
+
+/*图标*/
+
+.item .icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+/*文字*/
+
+.item label {
+  margin: 5px 0 0 10px;
+  font-size: 15px;
+  /*撑开label两边部分的距离*/
+  flex: 1;
+}
+
+/*箭头*/
+
+.item .arrow {
+  width: 9px;
+  height: 10px;
+  margin: auto;
+}
+
+.item .line {
+  background: lightgray;
+  height: 0.5px;
+}
+
+/* 按钮重置 */
+
+.btnClass {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  line-height: 35rpx;
+  border-radius: 0;
+}
+
+.btnClass::after {
+  width: 0;
+  border: 0 solid white;
+}
+
+/* 客服样式 */
+.contactBtn {
+  margin-top:13rpx;
+  width: 100%;
+  height: 65rpx;
+  position: absolute;
+  top: 0;
+  left: 90rpx; 
+  opacity:0.01; 
+}
+
+.wx-contact-button-wrapper {
+  width: 100% !important;
+  border:solid green 1px;
+  height: 65rpx !important; 
+}

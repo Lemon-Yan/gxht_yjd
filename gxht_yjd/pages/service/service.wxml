@@ -1,0 +1,13 @@
+<!--service.wxml-->
+<view class="contain">
+  <view class="headImg">
+    <image src="{{serviceData.headImg[0].path}}" alt=""></image>
+  </view>
+  <block wx:for="{{serviceData.jiuData}}">
+    <view class="carSection">
+      <image src="{{item.path}}"></image>
+       <navigator wx:if="{{item.status=='1'}}" class="btnDetail" url="../serviceDetail/serviceDetail?id={{item.id}}" hover-class="navigator-hover">立即查询</navigator> 
+       <text wx:if="{{item.status=='0'}}" class='btndetail2'>敬请期待</text>
+    </view>
+  </block>
+</view>

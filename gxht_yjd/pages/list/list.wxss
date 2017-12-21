@@ -1,0 +1,192 @@
+/* pages/list/list.wxss */
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+  clear: both;
+}
+
+.clearfix:after {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  content: " ";
+  visibility: hidden;
+  clear: both;
+}
+
+/* 列表项-头部 */
+
+.homeList {
+  padding: 20rpx;
+  /* background-color: #fff; */
+}
+
+.head {
+  border-bottom: solid #f8f8f8 1px;
+  height: 65rpx;
+}
+
+.head image {
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin-left: 15rpx;
+  margin-top: 10rpx;
+}
+
+.head text {
+  font-size: 28rpx;
+  color: red;
+  line-height: 70rpx;
+  margin-left: 7px;
+}
+
+/* 列表项-列表*/
+
+.listItem {
+  height: 3.7rem;
+  /* margin-top: 0.5rem; */
+  background-color: #fff;
+  border-bottom:solid #f4f5f6 1px; 
+}
+
+.itemImg {
+  overflow: hidden;
+  float: left;
+  height: 3.5rem;
+  width: 4rem;
+}
+
+.itemImg image {
+  width: 4rem;
+  height: 2.5rem;
+  margin: 0.5em 0;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.itemTxt {
+  width: 60%;
+  float: left;
+  /* margin-top: 10rpx; */
+  height: 3.5em;
+}
+
+.itemTxt .txt-title {
+  padding-top: 10rpx;
+  font-weight: bold;
+  color: #000;
+  font-size: 32rpx;
+  display: block;
+  margin-top: 10rpx;
+  float: left;
+}
+
+.itemTxt .txt-desc {
+  font-size: 26rpx;
+  color: #b0b0b0;
+  display: block;
+  margin-top: 5rpx;
+  float: left;
+}
+
+.shenqing {
+  /* border: solid green 1px;
+  border-radius: 10rpx; */
+  float: right;
+  margin: 45rpx 30rpx 0 0;
+}
+
+.shenqing image {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.shenqing navigator {
+  font-size: 28rpx;
+  padding: 8rpx 25rpx;
+  /* color: green; */
+  color: #000;
+}
+
+/* 搜索按钮 */
+
+.form {
+  padding: 10px 10px 0;
+  overflow: hidden;
+}
+
+.viewInput {
+  height: 75rpx;
+  border: solid #e3e3e3 1px;
+  border-radius: 10rpx;
+  background-color: white;
+  width: 80%;
+  float: left;
+  position: relative;
+}
+
+.viewInput .searchImg {
+  height: 45rpx;
+  width: 45rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 8px;
+}
+
+.clearImg {
+  height: 80rpx;
+  width: 80rpx;
+  position: absolute;
+  top: -4rpx;
+  right: 6rpx;
+  z-index: 999;
+  /* margin: 1px; *//* border:solid green 1px; *//* overflow: hidden;
+text-align: center; */
+}
+
+.clearImg image {
+  height: 100%;
+  width: 100%;
+  /* border: solid blue 1px; */
+  display: block;
+  z-index: 9999;
+}
+
+.btnGetCode {
+  height: 75rpx;
+  line-height: 75rpx;
+  font-size: 1rem !important;
+  border: solid red 0px !important;
+}
+
+.inputCss {
+  height: 75rpx;
+  font-size: 0.85rem;
+  text-align: left;
+  padding: 0 10rpx 0 65rpx;
+}
+
+.widt_100 {
+  width: 100% !important;
+}
+
+.noData {
+  padding: 50rpx 0;
+  text-align: center;
+}
+
+.noData text {
+  font-size: 1rem;
+  color: gray;
+}

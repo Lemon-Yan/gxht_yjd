@@ -1,0 +1,8 @@
+<!--sqFail.wxml-->
+<view class="contain">
+  <view class="successView">
+    <icon class="icon-box-img" type="cancel" size="93"></icon>
+    <text class="successTxt">申请失败，请稍候重新申请！</text> 
+    <button class="close" plain="true" type="default" bindtap="close">关闭</button>
+  </view>
+</view>

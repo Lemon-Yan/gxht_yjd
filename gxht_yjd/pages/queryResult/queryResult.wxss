@@ -1,0 +1,27 @@
+/* pages/queryResult/queryResult.wxss */
+
+.result {
+  padding: 0.5em;
+  text-align: left;
+  color: #b0b0b0;
+}
+
+.uinn {
+  padding: 0.5em;
+  background-color: white;
+  text-align: left;
+  line-height: 2rem;
+  margin: 0 0.5em;
+}
+
+.uinn .wxParse-p {
+  color: #b0b0b0;
+  font-size: 0.85rem;
+}
+
+.close {
+  margin-top: 2rem;
+  width: 90%;
+  border: solid 1px #d4d4d4 !important;
+  margin-bottom: 1rem;
+}

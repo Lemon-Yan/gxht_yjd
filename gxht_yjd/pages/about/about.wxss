@@ -1,0 +1,70 @@
+/* about.wxss */
+ .contain {
+  background-color: #f8f8f8;
+}
+
+.aboutus image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.company-cn {
+  font-size: 56rpx;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.company-en {
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.company-en .txt-orange {
+  margin-left: 10px;
+  color: orange;
+}
+
+.contactTxt-orange {
+  color: orange;
+}
+
+.company-content {
+  text-align: left;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  line-height: 55rpx;
+  text-indent: 20rpx;
+  color: #949494;
+}
+
+.contactus-con {
+  padding:20rpx;
+}
+
+.contactus-con image {
+  width: 50rpx;
+  height: 50rpx;
+  float: right; 
+  padding-right: 35rpx;
+}
+
+.contactus-con text {
+  font-size: 32rpx;
+  text-align: left;
+  color: #949494;
+}
+
+/* 地图 */
+
+.map {
+  padding: 30rpx 40rpx;
+}
+
+.footer {
+  font-size: 24rpx;
+  color: #949494;
+  text-align: center;
+  padding: 40rpx 0;
+}

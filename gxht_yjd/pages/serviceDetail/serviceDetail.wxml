@@ -1,0 +1,26 @@
+<!--pages/serviceDetail/serviceDetail.wxml-->
+<view class="contain">
+  <view class="view-content">
+    <image src="{{imageUrl}}"></image>
+    <view class="form">
+      <view class="viewInput name">
+        <input class="inputCss" type="text" value="{{resetName}}" placeholder-style="color:#F76260" bindinput="bindNameInput" name="input" placeholder="请输入姓名" />
+      </view>
+      <view class="viewInput name">
+        <input class="inputCss" type="idcard" value="{{resetIDCard}}" placeholder-style="color:#F76260" bindinput="bindIDCardInput" name="input" placeholder="请输入身份证" />
+      </view>
+      <view class="viewInput phone" wx:if="{{wangdai}}">
+        <input class="inputCss" maxlength="11" value="{{resetPhone}}" placeholder-style="color:#F76260" type="number" name="input" placeholder="请输入被查询手机号" bindblur="bindPhone2" />
+      </view>
+      <view class="viewInput phone">
+        <input class="inputCss" maxlength="11" value="{{resetPhone2}}" placeholder-style="color:#F76260" type="number" name="input" placeholder="请输入商家手机号" bindblur="bindPhone" />
+      </view>
+
+      <view class="viewInput code">
+        <input class="inputCss inputCode" value="{{resetCode}}" placeholder-style="color:#F76260" type="number" bindinput="bindCodeInput" name="input" placeholder="请输入验证码" />
+      </view>
+      <button class="btnGetCode" type="primary" plain="true" bindtap="setVerify" disabled="{{btnDis}}">{{VerifyCode}}</button>
+      <button class="btnSumbit clearfix" type="primary" bindtap="submit" disabled="{{btnSq}}">提交</button>
+    </view>
+  </view>
+</view>

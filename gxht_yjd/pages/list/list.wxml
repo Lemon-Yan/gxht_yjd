@@ -1,0 +1,36 @@
+<!--pages/list/list.wxml-->
+<!--index.wxml-->
+<view class="contain">
+  <view class="form" wx:if="{{!noData}}">
+    <view class="viewInput code {{widt_100}}">
+      <input class="inputCss inputCode" type="text" value="{{searchInput}}" bindfocus="bindFocus" bindinput="bindInput" name="input" placeholder="请输入关键字" />
+      <image class="searchImg" src='../../images/search.png'></image>
+    </view>
+    <button class="btnGetCode" type="primary" wx:if="{{searchResultShowed}}" plain="true" bindtap="cannel">取消</button>
+  </view>
+  <!-- 申请列表部分 -->
+  <view class="homeList">
+    <block wx:for-items="{{listData}}">
+      <navigator url="../shenqing/shenqing?headName={{item.title}}&id={{item.id}}">
+        <view class="listItem clearfix">
+          <view class="itemImg">
+            <image src="{{item.path}}"></image>
+          </view>
+          <view class="itemTxt">
+            <text class="txt-title clearfix">{{item.title}}</text>
+            <text class="txt-desc clearfix">{{item.content}}</text>
+          </view>
+          <view class="shenqing">
+            <image class="arrow" src="../../images/right.png"></image>
+          </view>
+        </view> 
+      </navigator>
+    </block>
+  </view>
+  <view class="noData" wx:if="{{searchNoData}}">
+    <text>暂无记录</text>
+  </view>
+  <view class="noData" wx:if="{{noData}}">
+    <text>暂无数据</text>
+  </view>
+</view>

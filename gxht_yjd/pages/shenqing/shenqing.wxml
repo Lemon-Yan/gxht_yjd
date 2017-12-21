@@ -1,0 +1,19 @@
+<!--shenqing.wxml-->
+<view class="contain">
+    <view class="view-content">
+        <image src="{{imageUrl}}"></image>
+        <view class="form">
+            <view class="viewInput name">
+                <input class="inputCss" value="{{resetName}}" type="text" placeholder-style="color:#F76260" bindinput="bindNameInput" name="input" placeholder="请输入姓名" />
+            </view>
+            <view class="viewInput phone">
+                <input class="inputCss" value="{{resetPhone}}" maxlength="11" placeholder-style="color:#F76260" type="number" name="input" placeholder="请输入手机号" bindblur="blurTel" />
+            </view>
+            <view class="viewInput code">
+                <input class="inputCss inputCode" value="{{resetCode}}" placeholder-style="color:#F76260" type="number" bindinput="bindCodeInput" name="input" placeholder="请输入验证码" />
+            </view>
+            <button class="btnGetCode" type="primary" plain="true" bindtap="setVerify" disabled="{{btnDis}}">{{VerifyCode}}</button>
+            <button class="btnSumbit clearfix" type="primary" bindtap="submit" disabled="{{btnSq}}">立即申请</button>
+        </view>
+    </view>
+</view>

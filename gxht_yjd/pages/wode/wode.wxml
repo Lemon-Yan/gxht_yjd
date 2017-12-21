@@ -1,0 +1,25 @@
+<!--wode.wxml-->
+<view class="contain">
+  <scroll-view class="scroll-view">
+    <!--头部-->
+    <view class="headerView">
+      <view class="imageView" bindtap="tapImageView">
+        <image class="picture" src="{{avatarUrl}}"> </image>
+      </view>
+      <label class="name">{{nickName}}</label>
+    </view>
+
+    <!--列表菜单-->
+     <block wx:for-items="{{items}}">
+      <navigator url="{{item.link}}">
+        <button class="btnClass" open-type="{{item.btn}}">
+        <view class="item">
+          <image class="icon" src="{{item.icon}}"></image>
+          <label>{{item.text}}</label>
+          <image class="arrow" src="../../images/0106arrow3x.png"></image>
+        </view>
+       </button>
+      </navigator>
+    </block>  
+  </scroll-view>
+</view>

@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="contain">
+    <!--轮播图-->
+    <swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for-items="{{lunboData}}">
+            <swiper-item>
+                <image src="{{item.path}}" class="slide-image" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 滚动部分 -->
+    <view class='gundong-section'>
+     <image src="../../images/round-g.gif"></image>
+      <view class="swiperview swiper-position"> 
+        <swiper class="swiperitem" indicator-dots="true" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" vertical="true">
+            <block wx:for="{{gundongData}}">
+                <swiper-item>
+                    <text class="swiper-txt">{{item}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    </view>
+   
+    <view class="swiperview2">
+        <image src="../../images/position.png"></image>
+        <view class="swiperitem" vertical="true">
+            <text class="swiper-txt">位置：{{currentAddress}}</text>
+        </view>
+    </view>
+    <!-- 九宫格 -->
+    <view class="navlist clearfix" wx:if="{{loading}}">
+        <block wx:for-items="{{jiuData}}">
+            <navigator url="../list/list?headName={{item.title}}&id={{item.id}}">
+                <image src="{{item.path}}" alt=""></image>
+                <text>{{item.title}}</text>
+            </navigator>
+        </block>
+    </view>
+
+    <!-- 申请列表部分 -->
+    <view class="homeList" wx:if="{{loading}}">
+        <view class="head">
+            <image src="../../images/run.png"></image>
+            <text>热门贷款</text>
+        </view>
+
+        <block wx:for-items="{{listData}}">
+            <view class="listItem clearfix">
+                <view class="itemImg">
+                    <image src="{{item.path}}"></image>
+                </view>
+                <view class="itemTxt">
+                    <text class="txt-title clearfix">{{item.title}}</text>
+                    <text class="txt-desc clearfix">{{item.content}}</text>
+                </view>
+                <view class="shenqing">
+                    <navigator url="../list/list?headName={{item.title}}&id={{item.id}}">申请</navigator>
+                </view>
+            </view>
+        </block>
+    </view>
+
+</view>

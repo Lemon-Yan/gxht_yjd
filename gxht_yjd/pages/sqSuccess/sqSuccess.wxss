@@ -1,0 +1,23 @@
+/* sqSuccess.wxss */
+.successView {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.successTxt {
+  display: block;
+  margin-top: 1rem;
+  font-size: 28rpx;
+  color: gray;
+}
+
+.btnView {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.close {
+  margin-top: 4rem;
+  width: 90%;
+  border: solid 1px #d4d4d4 !important;
+}
